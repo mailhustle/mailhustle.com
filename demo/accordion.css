@@ -1,0 +1,62 @@
+br {
+    line-height: 30px;
+}
+
+.premium-border {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+input[disabled] {
+    background: #eee;
+}
+
+.email {
+    margin-bottom: 10px;
+    padding-right: 15%;
+}
+
+.email.to {
+    text-align: right;
+    padding-right: 0;
+    padding-left: 15%;
+}
+
+.email .date {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+table tr:nth-of-type(22),
+table tr:nth-of-type(23),
+table tr:nth-of-type(24),
+table tr:nth-of-type(25),
+table tr:nth-of-type(26) {
+    filter: blur(2px);
+
+    /* https://www.google.com/search?q=css+prevent+from+selection&oq=css+prevent+from+sele&aqs=chrome.1.69i57j0l4j69i64.5569j0j1&sourceid=chrome&ie=UTF-8 */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+body.paid table tr:nth-of-type(22),
+body.paid table tr:nth-of-type(23),
+body.paid table tr:nth-of-type(24),
+body.paid table tr:nth-of-type(25),
+body.paid table tr:nth-of-type(26) {
+    filter: none;
+
+    /* https://www.google.com/search?q=css+prevent+from+selection&oq=css+prevent+from+sele&aqs=chrome.1.69i57j0l4j69i64.5569j0j1&sourceid=chrome&ie=UTF-8 */
+    -webkit-touch-callout: auto; /* iOS Safari */
+    -webkit-user-select: auto; /* Safari */
+     -khtml-user-select: auto; /* Konqueror HTML */
+       -moz-user-select: auto; /* Old versions of Firefox */
+        -ms-user-select: auto; /* Internet Explorer/Edge */
+            user-select: auto; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}

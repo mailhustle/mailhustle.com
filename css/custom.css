@@ -1,0 +1,128 @@
+strong {
+  color: black !important;
+}
+pre {
+  font-size: 0.7em;
+  display: inline-block;
+  margin-right: 1px;
+  background: rgba(204, 204, 204, 0.2);
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+#modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(102, 102, 102, 0.87);;
+  z-index: 999999;
+  display: none;
+}
+
+.ios-overlay-show {
+  z-index: 1000000;
+}
+
+.error-message {
+  color: red !important; /* need to be more specific */
+}
+
+img.link {
+  height: 25px;
+  position: relative;
+  top: 6px;
+  left: 5px;
+}
+
+#navButton {
+  display: none !important;
+}
+
+/* there is one another widget in place */
+@media (max-width: 1024px) {
+  #drift-widget {
+    bottom: 40px !important;
+    right: -8px !important;
+  }
+}
+
+.button {
+  padding: 0 1em;
+}
+
+#footer .icons i {
+  font-size: 30pt;
+}
+
+
+@media (max-width: 400px) {
+  .tokensale .tokensaleintro {
+    margin-top: 1em !important; 
+    margin-bottom: 0 !important;
+  }
+  .tokensale .tokensaleaddress strong {
+    padding: 12px !important;
+    font-size: 12px !important;
+  }
+
+  .feature-grid .feature .image img {
+    max-width: 241px;
+  }
+}
+
+
+
+/* timeline borrowed from Astralship: https://github.com/astralship/astralship.github.io/blob/master/index.html */
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1em;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline:before {
+  display: block;
+  content: '';
+  height: 100%;
+  border-left: solid 2px #666;
+  position: absolute;
+  left: 17px;
+  top: 0;
+  margin: 8px 0;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.timeline li label {
+  display: block;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  left: -4px;
+  background: #666;
+  top: 8px;
+}
+
+.timeline p {
+  font-size: 14pt;
+  font-weight: 100;
+  margin-top: 0;
+  color: #aaa;
+}
+
+.timeline strong {
+  font-size: 16pt;
+}
+
+.timeline li.done strong {
+  opacity: 0.4;
+}
