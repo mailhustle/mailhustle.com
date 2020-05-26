@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   -->
    
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="accordion.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,16 +102,15 @@
 
           Can this website be trusted?<br>
 
-          I'm in the "don't trust, verify" camp<br>
+          I'm heavily in the "don't trust, verify" camp<br>
 
           1. Verify the code<br>
           2. Run your own version<br>
 
-          <em>(once I am done with the cleanup it should be available on GitHub)</em><br>
-
           <div class="premium-border" ng-hide="!email"> <!-- no point asking for premium if we don't have email (not logged in) -->
             <span ng-show="!paid">Check how it works and then when you are happy <button ng-click="premium()">go premium!</button></span>
-            <span ng-show="paid">Thank you for being the supporter!<br>Premium version, all features unlocked.</span>
+            <span ng-show="paid">All features unlocked for the demo version. See also <a href="https://github.com/mailhustle/mailhustle.com/issues/1">this issue</a> regarding re-enabling payments.</span>
+            <!-- <span ng-show="paid">Thank you for being the supporter!<br>Premium version, all features unlocked.</span> -->
           </div>
           
         </div>
@@ -292,13 +291,7 @@
             5. Send (and profit)
           </uib-accordion-heading>
 
-          Currently the app has permissions only to read your email but not to send new messages.<br>
-
           <strong>TODO:</strong> automagically create personalised messages.<br>
-          
-          Is it ethical? AI and defaults are already governing our lives, I'm OK to use some clever automation in my personal life as well...<br>
-
-          In the meanwhile, I've heard guys at <em>gmass.co</em> are doing something similar.<br>
 
           Contact me anytime: <a href="mailto:email@genesis.re">email@genesis.re</a>          
         </div>

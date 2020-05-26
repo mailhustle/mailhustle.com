@@ -273,25 +273,33 @@ app.service("storage", function() {
     return service;
 })
 
-app.service("payments", function($http) {
+app.service("payments", function($http, $q) {
     let service = {}
 
     const ENDPOINT = "/"; // same server --> TODO: use GCP
 
     service.paid = function(email) {
-        return $http({
-            method: "POST",
-            url: ENDPOINT + "paid",
-            params: { email : email }
-        });
+        // return $http({
+        //     method: "POST",
+        //     url: ENDPOINT + "paid",
+        //     params: { email : email }
+        // });
+
+        let defer = $q.defer()
+        defer.resolve();
+        return defer.promise;
     }
 
     service.check = function(email) {
-        return $http({
-            method: "GET",
-            url: ENDPOINT + "check",
-            params: { email : email }
-        });
+        // return $http({
+        //     method: "GET",
+        //     url: ENDPOINT + "check",
+        //     params: { email : email }
+        // });
+
+        let defer = $q.defer()
+        defer.resolve({ data:true });
+        return defer.promise;
     }
 
     return service;
